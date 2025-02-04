@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'SAS Monospace', sans-serif;
-    background: url('C:\Users\Casian Rusu\OneDrive\Desktop\landing_page\img\bg_test.png') no-repeat center center fixed;
+    background: url('bg_test.png') no-repeat center center fixed;
     background-size: cover;
     color: #ffffff;
 }

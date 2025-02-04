@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+          <!-- Navbar Title -->
+          <h1 class="nav-title">Aerospace and Defense Trade Mission to Romania</h1>
+          
+          <!-- Hamburger Icon -->
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <!-- Navigation Menu -->
+          <nav class="nav-menu" id="nav-menu">
+            <ul>
+              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('agenda')">Agenda</a></strong></li>
+              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('purpose')">Purpose</a></strong></li>
+              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('joinus')">Join Us!</a></strong></li>
+              
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    
+    <div class="container" id="mission-purpose">
+        <h2 class="title2">PURPOSE OF THE EVENT</h2>
+        <p style="font-size: 18px;"><strong>Black Sea Strategies, supported by the US Embassy Commercial Service in Romania and in collaboration with 47G, a leading US aerospace, defense, manufacturing, and finance ecosystem based in Utah (home of the F35 Hill Air Base), will host an Aerospace and Defense Event in Romania in March 2025.</strong></p>
+        <p>This initiative is aimed at introducing U.S. companies to trade and investment opportunities in Romania's aerospace, defense, energy, and mining sectors, with a focus on expanding their outreach to other NATO & The EU member countries. This Trade Mission will focus on Romania and the Black Sea Countries (Ukraine, primarily, by using Romania as a business-launching platform) as alternative regions for US companies interested in opening new markets as well as diversifying their supply chains operations - thus making an important contribution to political and military stability and security in the region.</p>
+        <p style="text-align: left; margin-left: 10px; font-size: 18px;"><strong>The event aims to:</strong></p>
+        <ul>
+            <li style="text-align: left;"><strong>Introduce U.S. companies to trade and investment opportunities in Romania's aerospace, 
+                defense, manufacturing, and energy sectors, with potential expansion into other NATO and EU markets.</strong></li><br>
+            <li style="text-align: left;"><strong>Facilitate Romanian companies’ access to the U.S. market by building strong business ties with 47G, 
+                one of the fastest-growing aerospace and defense ecosystems in the country.</strong></li>
+        </ul>
+    </div>
+
+
+    <button class="scroll-button" onclick="scrollToNextSection()">↓</button>
+
+    <section id="agenda">
+    <div class="cards" id="next-section1">
+        <div class="card">
+            <div class="card__image-holder">
+                <img src="presentation.jpeg" alt="wave">
+            </div>
+            <div class="card-title">
+                <button class="toggle-info btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+                <h1 style="text-align: center;"><strong>DAY 1</strong></h1>
+                <h2 style="text-align: center;"><strong>3 of March 2025</strong></h2>
+            </div>
+            <div class="card-flap">
+                <ul>
+                    <li><strong>08:30 AM </strong>U.S. Embassy Briefing</li>
+                    <li><strong>10:00 AM </strong>Coffee Break</li>
+                    <li><strong>10:30 AM </strong>Opening Plenary - U.S. &amp; Romanian Governments - 27 years of strategic cooperation</li>
+                    <li><strong>11:30 AM </strong>Break</li>
+                    <li><strong>11:45 AM </strong>Plenary Panel - Public and Private Sectors Engagements; Best Practices</li>
+                    <li><strong>12:45 PM </strong>Plenary Panel - Public Procurement and Funding Sources in the Defense Sector</li>
+                    <li><strong>01:45 PM </strong>Networking Buffet Lunch</li>
+                    <li><strong>04:00 PM </strong>Romania and US - B2B meetings</li>
+                    <li><strong>06:30 PM </strong>Reception</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image-holder">
+                <img src="meeting.jpg" alt="beach">
+            </div>
+            <div class="card-title">
+                <button class="toggle-info btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+                <h1 style="text-align: center;"><strong>DAY 2</strong></h1>
+                <h2 style="text-align: center;"><strong>4 of March 2025</strong></h2>
+            </div>
+            <div class="card-flap">
+                <ul>
+                    <li><strong>09:00 AM </strong>47G B2B Meetings</li>
+                    <li><strong>12:00 PM </strong>Lunch</li>
+                    <li><strong>01:00 PM </strong>47G Companies B2B meetings OR visit to Romanian production facilities</li>
+                    <li><strong>07:00 PM </strong>Reception / Closing Ceremony, Radisson Blue Hotel</li>
+                    <li><strong>08:30 PM </strong>Reception concludes</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image-holder">
+                <img src="airplane.jpg" alt="mountain">
+            </div>
+            <div class="card-title">
+                <button class="toggle-info btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+                <h1 style="text-align: center;"><strong>DAY 3</strong></h1>
+                <h2 style="text-align: center;"><strong>5 of March 2025</strong></h2>
+            </div>
+            <div class="card-flap">
+                <ul>
+                    <li><strong>08:00 AM to 08:00 PM </strong>Travel to a business production facility - per request</li>
+                    <p>Guided tours and presentations</p>
+                    <p>Interact with Romanian Industry Experts<p>
+                    <p>Explore Potential Collaborations</p>
+                </ul>
+
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__image-holder">
+                <img src="Bran-Castle.jpg" alt="forest">
+            </div>
+            <div class="card-title">
+                <button class="toggle-info btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+                <h1 style="text-align: center;"><strong>DAY 4</strong></h1>
+                <h2 style="text-align: center;"><strong>6 of March 2025</strong></h2>
+            </div>
+            <div class="card-flap">
+                <ul>
+                    <li><strong>08:00 AM</strong> - Brasov / Peles / Bran (optional)</p>
+                    <p>Explore the historic city center and its medieval architecture</p>
+                    <p>Visit the stunning Peles Castle: A masterpiece of Neo-Renaissance architecture</p>
+                    <p>Discover Bran Castle; often associated with the legend of Count Dracula</p>
+                    <p><strong>Note:</strong> Interested parties may have the opportunity to visit Centre of Excellence for Drone Pilots Training at CARFIL, 
+                        a major subsidiary of Romania's primary state-owned defense company ROMARM, located in Brasov.</p>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+    <button class="scroll-button" onclick="scrollToNextSection2()">↓</button>
+
+    <section id="purpose">
+    <div class="opportunities" id="next-section2">
+        <h2 class="title2">Why participate</h2>
+        <div class="opportunity">
+            <div class="opportunities-icon" style="margin-bottom: 28px;"><img src="market.jpg.png" alt="market"></div>
+            <h3><strong>Expansion Potential</strong></h3>
+            <div class="opportunity-wrapper">
+            <p class="opportunity-text">47G, strategically based in Utah, helps Romanian companies enter the US market by providing access to a strong business network, trade, and financing opportunities.
+
+                Conversely, as a Black Sea Strategies partner, 47G supports US businesses expanding into Romania, now part of Schengen. With its strategic location, growing economy, and major infrastructure and defense investments, 
+                Romania serves as a key hub for trade and investment in the EU, Black Sea region, and Central Asia.
+                </p>
+                <span class="read-more"><strong>Read more</strong></span>
+            </div>
+        </div>
+        <div class="opportunity">
+            <div class="opportunities-icon" ><img src="suply.jpg.png" alt="supply"></div>
+            <h3><strong>Diversifying Supply Chains</strong></h3>
+            <div class="opportunity-wrapper">
+            <p class="opportunity-text">By using Romania as a base for business expansion, US companies can diversify their supply chains, which is vital for building resilience against global supply chain interruptions
+                 and maintaining a consistent supply of goods and services.
+            </p>
+            <span class="read-more"><strong>Read more</strong></span>
+            </div>
+        </div>
+        <div class="opportunity">
+            <div class="opportunities-icon" style="margin-bottom: 43px;"><img src="stability.jpg.png" alt="stability"></div>
+            <h3><strong>Political and Military Stability</strong></h3>
+            <div class="opportunity-wrapper">
+            <p class="opportunity-text">The involvement of US companies in Romania and the broader Black Sea region supports political and military stability. This engagement strengthens alliances, enhances security, 
+                and creates a stable environment conducive to long-term business activities.
+            </p>
+            <span class="read-more"><strong>Read more</strong></span>
+            </div>
+            
+        </div>
+    </div>
+    </section>
+
+    <section id="joinus">
+    <div class="join-us-section">
+        <button class="join-us-button" onclick="toggleJoinUsForm()">Join Us!</button>
+        <div class="join-us-form-container hidden" id="join-us-form">
+            <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+    
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <button type="submit" class="submit-button">Register</button>
+            </form>
+        </div>
+    </div>
+    </section>
+
+
+    <section id="partners">
+    <div class="partners-section">
+        <div class="partners-container">
+            <button class="partners-btn left-btn">&#8249;</button>
+                <div class="partners-grid">
+                    <div class="partner-box" onclick="window.open('https://example.com/partner1', '_blank')">
+                        <img src="apogee_worx_llc_logo.jpg" alt="Partner 1">
+                        <p class="partner-name">Apogee Worx</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner2', '_blank')">
+                        <img src="BennettGroup-logo.jpg" alt="Partner 2">
+                        <p class="partner-name">Bennett Group</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner3', '_blank')">
+                        <img src="gmre.jpg" alt="Partner 3">
+                        <p class="partner-name">GMRE</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner4', '_blank')">
+                        <img src="intergalactic.jpg" alt="Partner 4">
+                        <p class="partner-name">Intergalactic</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner5', '_blank')">
+                        <img src="levanta.png" alt="Partner 5">
+                        <p class="partner-name">Levanta</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner6', '_blank')">
+                        <img src="resolute-empire-logo.jpg" alt="Partner 6">
+                        <p class="partner-name">Resolute Empire</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner7', '_blank')">
+                        <img src="sbcc.png" alt="Partner 7">
+                        <p class="partner-name">SBCC</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner8', '_blank')">
+                        <img src="theorysix.png" alt="Partner 8">
+                        <p class="partner-name">Theorysix</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner9', '_blank')">
+                        <img src="ipc.png" alt="Partner 9">
+                        <p class="partner-name">IPC Foundry</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner10', '_blank')">
+                        <img src="utah.png" alt="Partner 10">
+                        <p class="partner-name">Utah Tech University</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://example.com/partner11', '_blank')">
+                        <img src="B2S (1).jpg" alt="Partner 11">
+                        <p class="partner-name">Black Sea Strategies</p>
+                    </div>
+                </div>
+            <button class="partners-btn right-btn">&#8250;</button>
+        </div>
+    </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

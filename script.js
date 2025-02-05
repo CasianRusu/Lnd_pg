@@ -130,6 +130,15 @@ window.addEventListener('scroll', function() {
     }
   });
 
+  window.addEventListener('scroll', function() {
+    const navTitle = document.querySelector('.image-row');
+    if (window.scrollY > 150) {
+      navTitle.style.display = 'none';
+    } else {
+      navTitle.style.display = 'flex';
+    }
+  });
+
   // Ensure this script runs after the DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.partners-grid');
@@ -139,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Assume all partner-box elements have the same width
     const partnerBox = document.querySelector('.partner-box');
-    const partnerWidth = partnerBox ? partnerBox.offsetWidth + 20 : 0; // add extra for padding/margin (adjust as needed)
+    const partnerWidth = partnerBox ? partnerBox.offsetWidth + 10 : 0; // add extra for padding/margin (adjust as needed)
     
     // Calculate how many partners can be visible in the container at once
     const containerWidth = document.querySelector('.partners-container').offsetWidth;
@@ -165,4 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  
   

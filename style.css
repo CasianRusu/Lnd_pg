@@ -5,6 +5,23 @@ body {
     background-size: cover;
     color: #ffffff;
 }
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 250px;
+  margin-bottom: 20px;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+  
+.image-row img {
+  height: 100px;  /* All images share the same height */
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
 .title {
     font-family: 'SAS Monospace', sans-serif;
     text-align: center;
@@ -23,7 +40,8 @@ body {
 }
 .container {
     text-align: center;
-    margin: 50px auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
     padding: 20px;
     max-width: 100%;
     border-radius: 15px;
@@ -147,7 +165,7 @@ body {
 .opportunities {
     margin: 350px auto;
     margin-bottom: 75px;
-    max-width: 90%;
+    max-width: 100%;
     text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
@@ -230,6 +248,7 @@ body {
     transition: transform 0.3s ease;
 }
 .partner-box {
+  width: 120px;
     text-align: center;
     border-radius: 15px;
     padding: 10px;
@@ -244,17 +263,20 @@ body {
     max-width: 100px;
     margin-bottom: 5px;
     border-radius: 10px;
+    justify-content: center;
 }
 .partner-box:hover {
     transform: scale(1.05);
 }
+
 .partner-name {
-    font-size: 14px;
-    color: #ffffff;
-    text-align: center;
-    white-space: nowrap;          
-    overflow: hidden;             
-    text-overflow: ellipsis;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* limits text to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .partners-btn {
     position: absolute;
@@ -399,26 +421,36 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 
     
   }
+
+  .nav-container2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+
+    
+  }
   
   /* Navbar Title */
   .nav-title {
     font-family: 'SAS Monospace', sans-serif;
     text-align: center;
     margin-top: 20px;
-    font-size: 35 px;
-        
-        transition: opacity 0.3s ease-in-out;
+    font-size: 35px;  /* removed the extra space after 35 */
+    transition: opacity 0.3s ease-in-out;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    margin-left: 50px;
-}
+    margin-left: 160px;
+  }
   
   /* Hamburger Icon */
   .hamburger {
     position: absolute;
     right: 20px;
     margin-top: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-100%);
     cursor: pointer;
     width: 35px;
     height: 30px;

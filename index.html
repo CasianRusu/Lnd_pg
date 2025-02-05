@@ -14,39 +14,47 @@
   </head>
   <body>
     <header class="navbar">
+        <div class="nav-container2">
+            <div class="image-row">
+                <img src="B2S (1).jpg" alt="Image 1">
+                <img src="47G logo (1).png" alt="Image 2">
+                <img src="Hero_USCS_0.jpg" alt="Image 3">
+              </div>
+              <div class="hamburger-wrapper">
+                <div class="hamburger" id="hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <!-- Navigation Menu -->
+                <nav class="nav-menu" id="nav-menu">
+                  <ul>
+                    <li><strong><a href="javascript:void(0)" onclick="scrollToSection('agenda')">Agenda</a></strong></li>
+                    <li><strong><a href="javascript:void(0)" onclick="scrollToSection('purpose')">Purpose</a></strong></li>
+                    <li><strong><a href="javascript:void(0)" onclick="scrollToSection('joinus')">Join Us!</a></strong></li>
+                  </ul>
+                </nav>
+              </div>
+        </div>
         <div class="nav-container">
+            
           <!-- Navbar Title -->
           <h1 class="nav-title">Aerospace and Defense Trade Mission to Romania</h1>
           
-          <!-- Hamburger Icon -->
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
           
-          <!-- Navigation Menu -->
-          <nav class="nav-menu" id="nav-menu">
-            <ul>
-              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('agenda')">Agenda</a></strong></li>
-              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('purpose')">Purpose</a></strong></li>
-              <li><strong><a href="javascript:void(0)" onclick="scrollToSection('joinus')">Join Us!</a></strong></li>
-              
-            </ul>
-          </nav>
         </div>
       </header>
 
     
     <div class="container" id="mission-purpose">
         <h2 class="title2">PURPOSE OF THE EVENT</h2>
-        <p style="font-size: 18px;"><strong>Black Sea Strategies, supported by the US Embassy Commercial Service in Romania and in collaboration with 47G, a leading US aerospace, defense, manufacturing, and finance ecosystem based in Utah (home of the F35 Hill Air Base), will host an Aerospace and Defense Event in Romania in March 2025.</strong></p>
-        <p>This initiative is aimed at introducing U.S. companies to trade and investment opportunities in Romania's aerospace, defense, energy, and mining sectors, with a focus on expanding their outreach to other NATO & The EU member countries. This Trade Mission will focus on Romania and the Black Sea Countries (Ukraine, primarily, by using Romania as a business-launching platform) as alternative regions for US companies interested in opening new markets as well as diversifying their supply chains operations - thus making an important contribution to political and military stability and security in the region.</p>
+        <p style="font-size: 18px;"><strong>Black Sea Strategies in collaboration with 47G, supported by the US Embassy Commercial Service in Romania and in collaboration with 47G, a leading US aerospace, defense, manufacturing, and finance ecosystem based in Utah, will host an Aerospace and Defense Event in Romania in March 2025.</strong></p>
+        <p>This initiative is aimed at introducing U.S. companies to trade and investment opportunities in Romania's aerospace, defense, energy, and mining sectors, with a focus on expanding their outreach to other NATO & The EU member countries. This Trade Mission will focus on Romania and the Black Sea Countries as alternative regions for US companies interested in opening new markets as well as diversifying their supply chains operations - thus making an important contribution to political and military stability and security in the region.</p>
         <p style="text-align: left; margin-left: 10px; font-size: 18px;"><strong>The event aims to:</strong></p>
         <ul>
             <li style="text-align: left;"><strong>Introduce U.S. companies to trade and investment opportunities in Romania's aerospace, 
                 defense, manufacturing, and energy sectors, with potential expansion into other NATO and EU markets.</strong></li><br>
-            <li style="text-align: left;"><strong>Facilitate Romanian companies’ access to the U.S. market by building strong business ties with 47G, 
+            <li style="text-align: left;"><strong>Facilitate Romanian companies access to the U.S. market by building strong business ties with 47G, 
                 one of the fastest-growing aerospace and defense ecosystems in the country.</strong></li>
         </ul>
     </div>
@@ -129,7 +137,7 @@
         </div>
         <div class="card">
             <div class="card__image-holder">
-                <img src="Bran-Castle.jpg" alt="forest">
+                <img src="Despre-INCAS-Card-Home.png" alt="forest">
             </div>
             <div class="card-title">
                 <button class="toggle-info btn">
@@ -141,15 +149,38 @@
             </div>
             <div class="card-flap">
                 <ul>
+                    <li><strong>09:00 AM - 04:30 PM</strong> - INCAS -National Institute for Aerospace Research ”Elie Carafoli”</p>
+                        <a href="Invitation - Certiflight 3rd Advisory Board Meeting - business.pdf" style="color: white"  target="_blank">I have the pleasure of inviting you to the Third
+                            CERTIFLIGHT Advisory Board Workshop</a> 
+                </ul>
+
+            </div>
+
+            
+        </div>
+        <div class="card">
+            <div class="card__image-holder">
+                <img src="Bran-Castle.jpg" alt="forest">
+            </div>
+            <div class="card-title">
+                <button class="toggle-info btn">
+                    <span class="left"></span>
+                    <span class="right"></span>
+                </button>
+                <h1 style="text-align: center;"><strong>DAY 5</strong></h1>
+                <h2 style="text-align: center;"><strong>6 of March 2025</strong></h2>
+            </div>
+            <div class="card-flap">
+                <ul>
                     <li><strong>08:00 AM</strong> - Brasov / Peles / Bran (optional)</p>
                     <p>Explore the historic city center and its medieval architecture</p>
                     <p>Visit the stunning Peles Castle: A masterpiece of Neo-Renaissance architecture</p>
                     <p>Discover Bran Castle; often associated with the legend of Count Dracula</p>
-                    <p><strong>Note:</strong> Interested parties may have the opportunity to visit Centre of Excellence for Drone Pilots Training at CARFIL, 
-                        a major subsidiary of Romania's primary state-owned defense company ROMARM, located in Brasov.</p>
                 </ul>
 
             </div>
+
+            
         </div>
     </div>
 </section>
@@ -200,16 +231,8 @@
         <button class="join-us-button" onclick="toggleJoinUsForm()">Join Us!</button>
         <div class="join-us-form-container hidden" id="join-us-form">
             <form action="#" method="POST" onsubmit="handleFormSubmit(event)">
-                <label for="first-name">First Name:</label>
-                <input type="text" id="first-name" name="first-name" required>
-    
-                <label for="last-name">Last Name:</label>
-                <input type="text" id="last-name" name="last-name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <button type="submit" class="submit-button">Register</button>
+
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSx0PV-cRR1fIZ3Spnq6r4YonsYyhZgCtafAulWDk-9j2URg/viewform?embedded=true" width="640" height="549" frameborder="0" marginheight="0" marginwidth="0">Se încarcă…</iframe>
             </form>
         </div>
     </div>
@@ -229,41 +252,53 @@
                         <img src="BennettGroup-logo.jpg" alt="Partner 2">
                         <p class="partner-name">Bennett Group</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://gmre-inc.com/', '_blank')">
-                        <img src="gmre.jpg" alt="Partner 3">
-                        <p class="partner-name">GMRE</p>
+                    <div class="partner-box" onclick="window.open('https://cencoregroup.com/', '_blank')">
+                        <img src="cencore.png" alt="Partner 3">
+                        <p class="partner-name">Cencore</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner4', '_blank')">
-                        <img src="intergalactic.jpg" alt="Partner 4">
-                        <p class="partner-name">Intergalactic</p>
+                    <div class="partner-box" onclick="window.open('https://ramasd.com/', '_blank')">
+                        <img src="RAM_LOGO-100high (1).jpg" alt="Partner 4">
+                        <p class="partner-name">Event Horizon Spaceworx</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner5', '_blank')">
-                        <img src="levanta.png" alt="Partner 5">
-                        <p class="partner-name">Levanta</p>
+                    <div class="partner-box" onclick="window.open('https://guardiangc.net/', '_blank')">
+                        <img src="GC-logo-1.png" alt="Partner 5">
+                        <p class="partner-name">Guardian Construction</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner6', '_blank')">
+                    <div class="partner-box" onclick="window.open('https://www.resoluteempire.com/', '_blank')">
                         <img src="resolute-empire-logo.jpg" alt="Partner 6">
                         <p class="partner-name">Resolute Empire</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner7', '_blank')">
-                        <img src="sbcc.png" alt="Partner 7">
-                        <p class="partner-name">SBCC</p>
+                    <div class="partner-box" onclick="window.open('https://nusano.com/', '_blank')">
+                        <img src="nusano.png" alt="Partner 7">
+                        <p class="partner-name">Nusano</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner8', '_blank')">
-                        <img src="theorysix.png" alt="Partner 8">
-                        <p class="partner-name">Theorysix</p>
+                    <div class="partner-box" onclick="window.open('https://www.flyskyrunner.com/ga/', '_blank')">
+                        <img src="skyrunner.png" alt="Partner 8">
+                        <p class="partner-name">SKYRUNNER LLC</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner9', '_blank')">
-                        <img src="ipc.png" alt="Partner 9">
-                        <p class="partner-name">IPC Foundry</p>
+                    <div class="partner-box" onclick="window.open('https://www.smallbcc.com/', '_blank')">
+                        <img src="sbcc.png" alt="Partner 9">
+                        <p class="partner-name">Small Business Consulting Corporation</p>
                     </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner10', '_blank')">
-                        <img src="utah.png" alt="Partner 10">
+                    <div class="partner-box" onclick="window.open('https://www.srscapital.us/about', '_blank')">
+                        <img src="srs.jpg" alt="Partner 10">
+                        <p class="partner-name">SRS Capital Partners</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://www.striderintel.com/', '_blank')">
+                        <img src="strider.jpg" alt="Partner 11">
+                        <p class="partner-name">Strider Technologies</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://theorysix.com/', '_blank')">
+                        <img src="theorysix.png" alt="Partner 12">
+                        <p class="partner-name">Theory Six</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://business.utah.gov/', '_blank')">
+                        <img src="utah_bsns.png" alt="Partner 13">
+                        <p class="partner-name">Utah Governor's Office of Economic Opportunity</p>
+                    </div>
+                    <div class="partner-box" onclick="window.open('https://utahtech.edu/', '_blank')">
+                        <img src="utah.png" alt="Partner 14">
                         <p class="partner-name">Utah Tech University</p>
-                    </div>
-                    <div class="partner-box" onclick="window.open('https://example.com/partner11', '_blank')">
-                        <img src="B2S (1).jpg" alt="Partner 11">
-                        <p class="partner-name">Black Sea Strategies</p>
                     </div>
                 </div>
             <button class="partners-btn right-btn">&#8250;</button>

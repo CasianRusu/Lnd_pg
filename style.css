@@ -22,6 +22,24 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
+
+@media (max-width: 600px) {
+  /* Arrange the top images vertically on small screens */
+  .image-row {
+    flex-direction: column;
+    gap: 20px;  /* Use a smaller gap on mobile */
+    /* Ensure the images are always visible (we’ll handle hiding in JS) */
+    
+  }
+
+  /* Optionally reduce image height on mobile */
+  .image-row img {
+    height: 50px;  /* Adjust as needed */
+    width: 70px;
+    width: auto;
+  }
+}
+
 .title {
     font-family: 'SAS Monospace', sans-serif;
     text-align: center;
@@ -418,6 +436,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
     padding: 20px;
     border-radius: 15px;
+    margin-bottom: 200px;
 
     
   }
@@ -429,7 +448,6 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     justify-content: space-between;
     padding: 20px;
     border-radius: 15px;
-
     
   }
   
@@ -438,11 +456,12 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     font-family: 'SAS Monospace', sans-serif;
     text-align: center;
     margin-top: 20px;
+    
     font-size: 35px;  /* removed the extra space after 35 */
     transition: opacity 0.3s ease-in-out;
     color: #ffffff;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-    margin-left: 160px;
+    justify-content: center;
   }
   
   /* Hamburger Icon */

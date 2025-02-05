@@ -140,7 +140,7 @@ window.addEventListener('scroll', function() {
   });
 
   // Ensure this script runs after the DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.partners-grid');
     const leftBtn = document.querySelector('.left-btn');
     const rightBtn = document.querySelector('.right-btn');
@@ -173,7 +173,56 @@ document.addEventListener('DOMContentLoaded', () => {
         grid.style.transform = `translateX(-${currentIndex * partnerWidth}px)`;
       }
     });
+  });*/
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const grid = document.querySelector('.partners-grid');
+    const leftBtn = document.querySelector('.left-btn');
+    const rightBtn = document.querySelector('.right-btn');
+    let currentIndex = 0;
+    
+    // Function to calculate slider parameters
+    function getSliderParams() {
+      const partnerBox = document.querySelector('.partner-box');
+      // Ensure the partner-box exists; add extra for margin/padding if needed (e.g., 20px)
+      const partnerWidth = partnerBox ? partnerBox.offsetWidth + 10 : 0;
+      const containerWidth = document.querySelector('.partners-container').offsetWidth;
+      const visibleCount = Math.floor(containerWidth / partnerWidth);
+      const totalItems = document.querySelectorAll('.partner-box').length;
+      const maxIndex = totalItems - visibleCount;
+      return { partnerWidth, visibleCount, totalItems, maxIndex };
+    }
+    
+    // Update slider transform based on currentIndex
+    function updateSlider() {
+      const { partnerWidth } = getSliderParams();
+      grid.style.transform = `translateX(-${currentIndex * partnerWidth}px)`;
+    }
+    
+    // Attach click events with recalculation
+    rightBtn.addEventListener('click', () => {
+      const { maxIndex } = getSliderParams();
+      if (currentIndex < maxIndex) {
+        currentIndex++;
+        updateSlider();
+      }
+    });
+    
+    leftBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSlider();
+      }
+    });
+    
+    // Recalculate slider parameters on window resize
+    window.addEventListener('resize', () => {
+      // Optionally reset the index if needed:
+      currentIndex = 0;
+      updateSlider();
+    });
   });
+  
 
   
   

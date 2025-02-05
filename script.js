@@ -55,13 +55,7 @@ formContainer.classList.remove('visible');
 }
 }
 
-function handleFormSubmit(event) {
-event.preventDefault();
-alert('Thank you for registering! We have received your details.');
-const formContainer = document.getElementById('join-us-form');
-formContainer.classList.add('hidden');
-formContainer.classList.remove('visible');
-}
+
 
 
 document.querySelectorAll('.read-more').forEach(item => {
@@ -90,6 +84,7 @@ document.querySelectorAll('.read-more').forEach(item => {
       menu.classList.remove('visible');
     }
   }
+  
   
   // Get the hamburger element and nav menu
 const hamburger = document.getElementById('hamburger');

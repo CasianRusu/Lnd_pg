@@ -54,6 +54,7 @@ body {
   /* Increase z-index if necessary */
   z-index: 9999;
   transition: transform 0.25s ease-in-out;
+  font-family: 'SAS Monospace', sans-serif;
 }
 
 .hamburger span {

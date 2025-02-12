@@ -32,7 +32,7 @@ body {
 .image-row {
   display: flex;
   align-items: center;
-  gap: 150px;  /* Always 150px between images */
+  gap: 50px;  /* Always 150px between images */
 }
 
 

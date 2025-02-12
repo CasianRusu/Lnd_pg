@@ -32,11 +32,23 @@ body {
 .image-row {
   display: flex;
   align-items: center;
-  gap: 50px;  /* Always 150px between images */
+  gap: 50px;
+}
+.image-row2 {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 
 .image-row img {
+  height: 100px;  /* Adjust as needed */
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-row2 img {
   height: 100px;  /* Adjust as needed */
   width: auto;
   object-fit: cover;
@@ -77,6 +89,82 @@ body {
 
 
 
+
+
+@media (min-width: 1260px) {
+  .images-wrapper {
+    display: flex;
+    justify-content: center; /* sau altă aliniere dorită */
+    align-items: center;
+    gap: 20px; /* spațiu între grupuri, dacă dorești */
+  }
+  .images-wrapper .image-row{
+    /* Eliminăm fixarea lățimii; lăsăm elementele să se ajusteze natural */
+    flex: 0 0 auto;
+    max-width: none;
+    display: flex;
+    flex-direction: row;  /* imaginile din fiecare grup afișate în linie */
+    align-items: center;
+    gap: 20px;  /* spațiu între imagini în același grup */
+  }
+  .images-wrapper .image-row2{
+    /* Eliminăm fixarea lățimii; lăsăm elementele să se ajusteze natural */
+    flex: 0 0 auto;
+    max-width: none;
+    display: flex;
+    flex-direction: row;  /* imaginile din fiecare grup afișate în linie */
+    align-items: center;
+    gap: 20px;  /* spațiu între imagini în același grup */
+  }
+  .images-wrapper .image-row img{
+    height: 100px;  /* exemplu: ajustați după preferințe */
+    width: auto;
+  }
+  .images-wrapper .image-row2 img{
+    height: 100px;  /* exemplu: ajustați după preferințe */
+    width: auto;
+  }
+}
+
+
+@media (max-width: 1260px) {
+  /* Facem ca wrapper-ul imaginilor să se comporte ca un container flex pe rând */
+  .images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Fiecare coloană ocupă aproximativ 50% din lățimea containerului */
+  .images-wrapper .image-row {
+    flex: 0 0 50%;       /* 48% pentru a lăsa puțin spațiu între coloane */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;  /* Așezăm imaginile vertical în coloană */
+    align-items: center;
+    gap: 10px;               /* spațiu între imagini, ajustabil */
+  }
+  .images-wrapper  .image-row2{
+    flex: 0 0 50%;       /* 48% pentru a lăsa puțin spațiu între coloane */
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;  /* Așezăm imaginile vertical în coloană */
+    align-items: center;
+    gap: 10px;               /* spațiu între imagini, ajustabil */
+  }
+  
+  /* Ajustează dimensiunile imaginilor dacă este necesar */
+  .images-wrapper .image-row img{
+    height: 50px;    /* exemplu: poți ajusta după nevoie */
+    width: auto;     /* sau setează o lățime fixă, de ex.: 100px */
+  }
+
+  .images-wrapper .image-row2 img{
+    height: 50px;    /* exemplu: poți ajusta după nevoie */
+    width: auto;     /* sau setează o lățime fixă, de ex.: 100px */
+  }
+}
+
 @media (max-width: 600px) {
   /* Arrange the top images vertically on small screens */
   .image-row {
@@ -86,8 +174,25 @@ body {
     
   }
 
+  .image-row2 {
+    flex-direction: column;
+    gap: 20px;  /* Use a smaller gap on mobile */
+    /* Ensure the images are always visible (we’ll handle hiding in JS) */
+    
+  }
+  
+  .images-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* spațiu între grupuri, dacă dorești */
+  }
   /* Optionally reduce image height on mobile */
   .image-row img {
+    height: 50px;  /* Adjust as needed */
+    width: 70px;
+    width: auto;
+  }
+  .image-row2 img {
     height: 50px;  /* Adjust as needed */
     width: 70px;
     width: auto;

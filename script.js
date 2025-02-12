@@ -134,6 +134,16 @@ window.addEventListener('scroll', function() {
     }
   });
 
+  window.addEventListener('scroll', function() {
+    const navTitle = document.querySelector('.image-row2');
+    if (window.scrollY > 150) {
+      navTitle.style.display = 'none';
+    } else {
+      navTitle.style.display = 'flex';
+    }
+  });
+
+
   // Ensure this script runs after the DOM is loaded
 /*document.addEventListener('DOMContentLoaded', () => {
     const grid = document.querySelector('.partners-grid');
